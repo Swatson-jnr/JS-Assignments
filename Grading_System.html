@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading_System Assignment</title>
+    <link rel="stylesheet" href="CSS/prism.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="question container my-5 text-light">
+    <h3> 
+        Write a computer alogorithm for the grading system, Considering the following grading system: 
+    </h3>
+
+    <table class="Table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="bg-info">Grade</th>
+                <th class="bg-info">Mark</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>Above 70</td>
+            </tr>
+
+            <tr></tr>
+                <td>B</td>
+                <td>60-69</td>
+            </tr>
+
+            <tr>
+                <td>C</td>
+                <td>50-59</td>
+            </tr>
+
+            
+            <tr>
+                <td>C</td>
+                <td>50-59</td>
+            </tr>
+
+            
+            <tr>
+                <td>D</td>
+                <td>40-49</td>
+            </tr>
+
+            
+            <tr>
+                <td>F</td>
+                <td>Below 40</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>
+
+
+
+<br>
+<br>
+    <div class="container d-flex justify-content-between">
+    <h4 class="text-light">Answer:</h4>
+    <a href="index.html" class="btn btn-danger btn-warning rounded-pill">Home</a>
+    </div>
+
+    <div class="container bg-light">
+        <pre class="d-flex justify-content-center align-items-center">
+                <code class="language-css">
+                    let score = Math.floor(Math.random() * 100)
+
+                    if (score < 10){
+                        console.log('YOU HAVE FAILED DRASTICALLY, GO HOME!!')
+                    } else if (score >= 70){
+                        console.log('A')
+                    } else if (score >= 60){
+                        console.log('B')
+                    } else if (score >= 50){
+                        console.log('C')
+                    } else if (score >= 40){
+                        console.log('D')
+                    } else if (score < 40){
+                        console.log('F')
+                    } else{
+                        console.log('USELESS BEING GO HOME')
+                    };
+
+                    console.log(score);
+
+                </code>
+            </pre>
+    </div>
+
+
+<script src="JS/prism.js"></script>
+</body>
+</html>

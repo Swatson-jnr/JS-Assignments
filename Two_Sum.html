@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Sum Assignment</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/prism.css">
+</head>
+<body class="Two">
+
+
+    <div class="question container my-5 text-light">
+        <h4>
+            Given an array of integers <code>nums</code> and integer <code>target</code>, return indices of the two numbers such that they add up to <code>target</code>. 
+            You may assume that each input would have exactly one solution, and you may not use the same element twice.
+            You can return the answer in any order.
+       </h4>
+    </div>
+    
+    <br>
+    <br>
+        <div class="container d-flex justify-content-between">
+        <h4 class="text-light">Answer:</h4>
+        <a href="index.html" class="btn btn-danger btn-warning rounded-pill ">Home</a>
+        </div>
+        
+        <div class="container">
+            <pre class="d-flex justify-content-center align-items-center">
+                <code class="language-css">
+                    
+                    /*
+                    @param {number []}
+                    @param {number []}
+                    @return {numbaer[]}
+                    */
+
+                    let teoSum = function(nums. target){
+                        let map = new Map ();
+                        for (let i = 0; i < nums.length; i++){
+                            let num1 = nums[i];
+                            let num2 = target - num1;
+                            if (map.has(num2)){
+                                return [i, map.get(num2)]
+                            }
+                            map.set(num1, i)
+                        }
+                    };
+                    
+                </code>
+            </pre>
+        
+        </div>
+
+
+
+
+
+        <script src="JS/prism.js"></script>
+</body>
+</html>
